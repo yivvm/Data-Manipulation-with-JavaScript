@@ -43,7 +43,7 @@ const gallon60 = totalDistance / speed60;
 const gallon75 = totalDistance / speed75;
 console.log(`${gallon55} of fuel is needed for the entire trip at the speed of 55 miles per hour.`);
 console.log(`${gallon60} of fuel is needed for the entire trip at the speed of 60 miles per hour.`);
-console.log(`${gallon75} of fuel is needed for the entire trip at the speed of 75 miles per hour.`)
+console.log(`${gallon75} of fuel is needed for the entire trip at the speed of 75 miles per hour.`);
 
 
 // Question 2: Will your budget be enough to cover the fuel expense?
@@ -53,5 +53,13 @@ const budget = 175;
 const avgCost = 3;
 const maxGallon = budget / avgCost;
 const isBudget = (maxGallon >= gallon55) || (maxGallon >= gallon60) || (maxGallon >= gallon75);
-console.log(`The budget is enough: ${isBudget}`);
+console.log(`The budget is enough: ${isBudget}.`);
 
+
+// Question 3: How long will the trip take, in hours?
+const hours55 = totalDistance / 55;
+const hours60 = totalDistance / 60;
+const hours75 = totalDistance / 75;
+console.log(`It will take ${hours55} hours for the entire trip at the speed of 55 miles per hour.`);
+console.log(`It will take ${hours60} hours for the entire trip at the speed of 60 miles per hour.`);
+console.log(`It will take ${hours75} hours for the entire trip at the speed of 75 miles per hour.`);
