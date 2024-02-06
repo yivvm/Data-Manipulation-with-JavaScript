@@ -45,10 +45,13 @@ console.log(`${gallon55} of fuel is needed for the entire trip at the speed of 5
 console.log(`${gallon60} of fuel is needed for the entire trip at the speed of 60 miles per hour.`);
 console.log(`${gallon75} of fuel is needed for the entire trip at the speed of 75 miles per hour.`)
 
+
+// Question 2: Will your budget be enough to cover the fuel expense?
 // You have a fuel budget of $175.
 // The average cost of fuel is $3 per gallon.
 const budget = 175;
 const avgCost = 3;
 const maxGallon = budget / avgCost;
-
+const isBudget = (maxGallon >= gallon55) || (maxGallon >= gallon60) || (maxGallon >= gallon75);
+console.log(`The budget is enough: ${isBudget}`);
 
