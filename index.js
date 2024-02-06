@@ -60,3 +60,12 @@ console.log(isDivide5);
 const firstLargerLast = (n1 > n4);
 console.log(firstLargerLast);
 
+// Accomplish the following arithmetic chain:
+// Subtract the first number from the second number.
+// Multiply the result by the third number.
+// Find the remainder of dividing the result by the fourth number.
+const secondSubtractOne = n2 - n1;
+const multiplyThird = secondSubtractOne * n3;
+const divideFourth = multiplyThird / n4;
+console.log(divideFourth);
+
