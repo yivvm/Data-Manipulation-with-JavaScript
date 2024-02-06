@@ -63,3 +63,19 @@ const hours75 = totalDistance / 75;
 console.log(`It will take ${hours55} hours for the entire trip at the speed of 55 miles per hour.`);
 console.log(`It will take ${hours60} hours for the entire trip at the speed of 60 miles per hour.`);
 console.log(`It will take ${hours75} hours for the entire trip at the speed of 75 miles per hour.`);
+
+
+// Question 4: Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+const isBudget55 = (maxGallon >= gallon55);
+const isBudget60 = (maxGallon >= gallon60);
+const isBudget75 = (maxGallon >= gallon75);
+console.log(`The budget at speed of 55 miles per hour is enough: ${isBudget55}.`);
+console.log(`The budget at speed of 60 miles per hour is enough: ${isBudget60}.`);
+console.log(`The budget at speed of 75 miles per hour is enough: ${isBudget75}.`);
+
+// Since The budget at speed of 75 miles per hour is not enough, 
+// we will choose between traveling at an average of 55 or at an average of 60.
+const is55Longer60 = (hours55 > hours60);
+console.log(`Traveling at an average of 55 takes longer than traveling at an average of 60: ${is55Longer60}.`);
+
+console.log(`Since traveling at an average of 55 takes longer than traveling at an average of 60, We will travel at an average of 60 miles per hour.`)
