@@ -69,3 +69,6 @@ const multiplyThird = secondSubtractOne * n3;
 const divideFourth = multiplyThird / n4;
 console.log(divideFourth);
 
+// Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+const isNotOver25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
+console.log(isNotOver25);
